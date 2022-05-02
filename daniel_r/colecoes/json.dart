@@ -16,6 +16,9 @@ void main() {
   print(dados['cursos'][1]['dificuldade']);
 
   //!O json precisa estar formatado corretamente !!
+
+  //?Exemplo que tive ajuda ao json vir como list []
+  // List<Usuario> usu  = dados.map((u) => Usuario.fromMap(u)).toList();
 }
 
 String dadosUsuario() {
