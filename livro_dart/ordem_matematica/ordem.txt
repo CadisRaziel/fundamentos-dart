@@ -1,0 +1,7 @@
+void main() {
+print(1+6/2*3-6); // > 4
+}
+Os operadores / e * são mais prioritários que + e - , logo devem executar primeiro. Mas entre a divisão e a multiplicação,
+qual vem primeiro tendo em vista que ambos têm a mesma ordem de precedência? Como a associatividade deles é da ESQUERDA para DIREITA, 
+primeiro é executada a divisão: 1+3*3-6 .
+Depois a multiplicação: 1+9-6 . E, por fim, a adição e subtração, resultando em 4 .
