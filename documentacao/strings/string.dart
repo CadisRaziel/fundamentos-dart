@@ -114,25 +114,20 @@ void main() {
   /// ```
   /// Se [start] e [end] forem fornecidos, apenas os valores de [charCodes]
   /// nas posições de `start` até, mas não incluindo, `end`, são usados.
-  /// Os valores `start` e `end` devem satisfazer
-  /// `0 <= início <= fim <= charCodes.length`.
+  /// Os valores `start` e `end` devem satisfazer `0 <= início <= fim <= charCodes.length`.
 
 //! String.fromCharCode (Singular)
   /// Aloca uma nova string contendo o [charCode] especificado.
   /// Se o [charCode] puder ser representado por uma única unidade de código UTF-16, o novo
   /// string contém uma única unidade de código. Caso contrário, o [comprimento] é 2 e
-  /// as unidades de código formam um par substituto. Consulte a documentação para
-  /// [fromCharCodes].
+  /// as unidades de código formam um par substituto. Consulte a documentação para [fromCharCodes].
   /// É permitido criar uma [String] com metade de um par substituto.
 
 //! String.fromEnvironment
   /// O valor da string da declaração do ambiente [name].
   /// Declarações de ambiente são fornecidas pela compilação do sistema circundante
-  /// ou executando o programa Dart. Declarações mapeiam uma chave de string para uma string
-  /// valor.
-  /// Se [name] não for declarado no ambiente, o resultado será
-  /// [valor padrão].
-  ///
+  /// ou executando o programa Dart. Declarações mapeiam uma chave de string para uma string valor.
+  /// Se [name] não for declarado no ambiente, o resultado será[valor padrão].
   /// Exemplo de obtenção de um valor:
   /// ```dart
   /// const String.fromEnvironment("defaultFloo", defaultValue: "no floo")
@@ -146,8 +141,7 @@ void main() {
   /// ```
   /// O valor da string, ou a falta de um valor, associado a um [nome]
   /// deve ser consistente em todas as chamadas para `String.fromEnvironment`,
-  /// [int.fromEnvironment], [bool.fromEnvironment] e [bool.hasEnvironment]
-  /// em um único programa.
+  /// [int.fromEnvironment], [bool.fromEnvironment] e [bool.hasEnvironment] em um único programa.
   /// Este construtor só funciona quando invocado como `const`.
   /// Pode funcionar como uma invocação não constante em algumas plataformas que
   /// tem acesso às opções do compilador em tempo de execução, mas mais adiantado
@@ -159,10 +153,8 @@ void main() {
 
 //! String operator []
   /// O caractere (como uma unidade de código único [String]) no [index].
-  ///
   /// A string retornada representa exatamente uma unidade de código UTF-16, que pode ser
-  /// metade de um par substituto. Um único membro de um par substituto é um
-  /// string UTF-16 inválida:
+  /// metade de um par substituto. Um único membro de um par substituto é um string UTF-16 inválida:
   /// ```dart
   /// var clef = '\u{1D11E}';
   // These represent invalid UTF-16 strings.
@@ -177,7 +169,6 @@ void main() {
 
 //! length
   /// O comprimento da string.
-  ///
   /// Retorna o número de unidades de código UTF-16 nesta string. O número
   /// de [runes] pode ser menor, se a string contiver caracteres fora
   /// o Plano Multilíngue Básico (plano 0):
@@ -192,13 +183,11 @@ void main() {
 
 //! hashCode
   /// Um ​​código hash derivado das unidades de código da string.
-  ///
   /// Isso é compatível com [operador ==]. Strings com a mesma sequência
   /// de unidades de código têm o mesmo código hash.
 
 //! bool operator ==
   /// Se [other] é uma `String` com a mesma sequência de unidades de código.
-  ///
   /// Este método compara cada unidade de código individual das strings.
   /// Não verifica a equivalência de Unicode.
   /// Por exemplo, ambas as strings a seguir representam a string 'Amélie',
@@ -206,9 +195,9 @@ void main() {
   /// ```dart
   /// 'Am\xe9lie' == 'Ame\u{301}lie'; // false
   /// ```
-  /// The first string encodes 'é' as a single unicode code unit (also
-  /// a single rune), whereas the second string encodes it as 'e' with the
-  /// combining accent character '◌́'.
+  /// A primeira string codifica 'é' como uma única unidade de código unicode (também
+  /// uma única runa), enquanto a segunda string a codifica como 'e' com o
+  /// combinando o caractere de acento '◌́'.
 
 //! compareTo
   /// Compara esta string com [other].
