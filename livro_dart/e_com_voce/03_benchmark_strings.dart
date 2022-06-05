@@ -11,11 +11,12 @@ const quantidade = 9999;
 void main() {
   print("Benchmarking $quantidade strings");
 
-  print("${medir(usarStringBuffer)} : StringBuffer");
-  print("${medir(usarConcatenacao)} : Concatenação");
+  print("${benchmark(usarStringBuffer)} : StringBuffer");
+  print("${benchmark(usarConcatenacao)} : Concatenação");
 }
 
-Duration medir(Function fn) {
+//!benchmark_strings
+Duration benchmark(Function fn) {
   final sw = Stopwatch();
   sw.start();
   fn();

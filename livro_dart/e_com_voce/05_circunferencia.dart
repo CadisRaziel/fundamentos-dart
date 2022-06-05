@@ -1,9 +1,6 @@
 import 'dart:io';
 import 'dart:math';
 
-final String a = 'dinâmica?';
-const String b = 'dinâmica?';
-
 void main() {
   print("------ Cálculo de circunferência ------");
 
