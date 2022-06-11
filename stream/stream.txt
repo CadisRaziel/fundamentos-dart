@@ -1,0 +1,15 @@
+• Stream -> Fluxo (não sequencial/async)
+• Não precisa terminar para executar
+
+
+• Design patter -> Padrão de projeto
+• Observer ->
+• Pub/Sub -> solicita o evento e espera acontece e quando acontece ele te informa
+
+• 4 Pilares:
+• Manifesto reativo (responsivo, resiliente, elasticidade, guiado por msg)
+• responsivo -> Quando lançar o evento responda com alguma coisa, mesmo se for erro
+• resiliente -> Tolerante a falhas, o fluxo não pode quebrar se der um erro
+• elasticidade -> escalavel
+• guiado por msg -> ele envia o evento e vai ter o retorno em algum lugar (se for um metodo temos que espera o metodo efetua pra retornar algo,
+ na stream não voce manda o evento e outras coisas são feitas no processo ate o retorno vir)
