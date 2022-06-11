@@ -43,3 +43,6 @@ Future<String> exemploAsync(int value) async {
   await Future.delayed(const Duration(seconds: 2));
   return 'Convertido $value';
 }
+
+
+//!Obs: o rxdart package tem outros operadores para auxiliar
