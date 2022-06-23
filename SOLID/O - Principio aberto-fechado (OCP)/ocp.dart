@@ -16,8 +16,6 @@ abstract class Pagamento2 {
   void pagar();
 }
 
-//!Obs importante: repare como o 'extends' e 'implements' se comporta herdando 'metodo e variavel'
-
 // na extensão reutilizamos o valor
 class PagamentoBoleto extends Pagamento2 {
   @override
